@@ -1,21 +1,31 @@
-# co014428e8642aa862044633d
+# Game of War
+Game of War is a simple web-based card game where players draw cards from a shuffled deck and compare their values to determine the winner of each round.
 
-Quick start:
+## Features
+New Deck Button: Clicking the "New Deck" button fetches a new shuffled deck of cards from an external API and displays the number of remaining cards.
+Draw Cards Button: Clicking the "Draw" button fetches two cards from the deck and displays them on the webpage. The values of the drawn cards are compared to determine the round winner.
+Scores: The computer score and player score are displayed and updated based on the outcome of each round.
 
-```
-$ npm install
-$ npm start
-````
+Winner Display: If there are no remaining cards, the final winner (computer or player) is displayed in the header.
 
-Head over to https://vitejs.dev/ to learn more about using vite
-## About Scrimba
+## Technologies Used
+HTML: Markup language for structuring the webpage.
+CSS: Styling language for visual presentation.
+JavaScript: Programming language for implementing interactivity and fetching data from APIs.
 
-At Scrimba our goal is to create the best possible coding school at the cost of a gym membership! 💜
-If we succeed with this, it will give anyone who wants to become a software developer a realistic shot at succeeding, regardless of where they live and the size of their wallets 🎉
-The Frontend Developer Career Path aims to teach you everything you need to become a Junior Developer, or you could take a deep-dive with one of our advanced courses 🚀
+## API Integration
+The website utilizes the "Deck of Cards" API provided by https://apis.scrimba.com/deckofcards/ to fetch and shuffle the deck of cards, as well as draw cards from the deck.
 
-- [Our courses](https://scrimba.com/allcourses)
-- [The Frontend Career Path](https://scrimba.com/learn/frontend)
-- [Become a Scrimba Pro member](https://scrimba.com/pricing)
+## Setup and Usage
+Clone or download the project files to your local machine.
+Open the index.html file in a web browser.
+Click the "New Deck" button to start a new game and fetch a shuffled deck.
+Click the "Draw" button to draw two cards and compare their values.
+Repeat step 4 until there are no remaining cards.
+The winner of the game will be displayed in the header.
 
-Happy Coding!
+## Credits
+The "Deck of Cards" API: https://apis.scrimba.com/deckofcards/
+
+## License
+This project is licensed under the MIT License.
