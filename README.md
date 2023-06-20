@@ -3,7 +3,9 @@ Game of War is a simple web-based card game where players draw cards from a shuf
 
 ## Features
 New Deck Button: Clicking the "New Deck" button fetches a new shuffled deck of cards from an external API and displays the number of remaining cards.
+
 Draw Cards Button: Clicking the "Draw" button fetches two cards from the deck and displays them on the webpage. The values of the drawn cards are compared to determine the round winner.
+
 Scores: The computer score and player score are displayed and updated based on the outcome of each round.
 
 Winner Display: If there are no remaining cards, the final winner (computer or player) is displayed in the header.
