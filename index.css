@@ -1,7 +1,9 @@
-html, body {
+html,
+body {
     margin: 0;
     padding: 0;
     background-image: url("table.png");
+    background-size: cover;
     font-family: "Exo 2", sans-serif;
     height: 100vh;
 }
@@ -20,6 +22,39 @@ button {
     border: none;
 }
 
+#new-deck {
+    width: 10em;
+    height: 10em;
+    font-size: 2em;
+    transition: .7s;
+}
+#new-deck:active {
+    transform: scale(1.2);
+    background-color: #000;
+    color: #fff;
+    transition: .3s;
+}
+
+#remaining {
+    position: absolute;
+    right: 1em;
+    top: -.4em;
+    font-size: 2em;
+    color: rgb(255, 255, 0);
+}
+
+#header {
+    font-size: 4em;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 900;
+
+}
+
+#header::selection {
+    background-color: #0096c7;
+    color: #000;
+}
+
 button#new-deck {
     align-self: flex-start;
     padding: 5px;
@@ -34,8 +69,9 @@ button.draw {
 div.card-slot {
     border: 1px solid black;
     border-radius: 5px;
-    height: 120px;
-    width: calc(120px * 5 / 7);
+    height: 20em;
+    width: calc(18em * 5 / 7);
+    background-color: pink;
 }
 
 div.card-slot:nth-of-type(1) {
@@ -53,7 +89,7 @@ div.top {
     align-self: flex-start;
 }
 
-div.top > p {
+div.top>p {
     margin: 0;
     margin-left: 10px;
 }
@@ -64,4 +100,14 @@ button:disabled {
 
 h2 {
     margin: 10px;
+}
+
+#draw-cards {
+    font-size: 2em;
+    transition: .7s;
+}
+#draw-cards:active{
+    background-color: #000;
+    color: #fff;
+    transition: .3s;
 }
