@@ -77,3 +77,5 @@ function determineCardWinner(card1, card2) {
     }
 }
 
+/* JavaScript approach to disable scrolling */
+document.body.style.overflow = "hidden";

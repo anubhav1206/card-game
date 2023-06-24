@@ -17,6 +17,20 @@ body {
     color: white;
 }
 
+
+/* Alternative approach using ::-webkit-scrollbar pseudo-element */
+body::-webkit-scrollbar {
+    width: 0.5em;
+    /* Set the width of the scrollbar */
+    background-color: #F5F5F5;
+    /* Set the background color of the scrollbar */
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: #000000;
+    /* Set the color of the scrollbar thumb */
+}
+
 button {
     background-color: #FFF100;
     cursor: pointer;
